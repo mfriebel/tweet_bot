@@ -2,7 +2,7 @@
 
 This project implements a data pipeline using Docker. Tweets are streamed about sustainability are streamed via Tweepy Listener and stored in a MongoDB database. The ETL job performs live sentiment analysis (using [VADER](https://github.com/cjhutto/vaderSentiment)) on the stored tweets and loads them with the according score into a PostGres SQL database. In the end tweets with most positive sentiment are posted on Slack using a Webhook.
 
-![Tweepy](Images/twitter.jpeg) &rarr; ![MongoDB](Images/mongodb.jpeg) &rarr; **ETL** &rarr; ![PostGresSQL](Images/postgres.png) &rarr; ![Slack](Images/slack_api_logo_vogue.png)
+![Pipeline](Images/pipeline.pdf)
 
 ## Docker Compose necessities
 
