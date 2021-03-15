@@ -62,4 +62,4 @@ if __name__ == '__main__':
     auth = authenticate()
     listener = TwitterListener()
     stream = Stream(auth, listener)
-    stream.filter(track=['vaccine'], languages=['en'])
+    stream.filter(track=['sustainable'], languages=['en'])
