@@ -1,6 +1,6 @@
 # Tweets Collection and Analysis Pipeline
 
-This project implements a data pipeline using Docker. Tweets are streamed about sustainability are streamed via Tweepy Listener and stored in a MongoDB database. The ETL job performs live sentiment analysis (using [VADER](https://github.com/cjhutto/vaderSentiment)) on the stored tweets and loads them with the according score into a PostGres SQL database. In the end tweets with most positive sentiment are posted on Slack using a Webhook.
+This project implements a data pipeline using Docker. Tweets are streamed about sustainability are streamed via Tweepy Listener and stored in a MongoDB database. The ETL job performs live sentiment analysis (using [VADER](https://github.com/cjhutto/vaderSentiment)) on the stored tweets and loads them with the according score into a PostgreSQL database. In the end tweets with most positive sentiment are posted on Slack using a Webhook.
 
 ![Pipeline](Images/pipeline.jpg)
 
@@ -13,7 +13,7 @@ Setting up local environmental variables
   * TWITTER_ACCESS_TOKEN
   * TWITTER_ACCESS_TOKEN_SECRET
 
-- PostGres SQL Credentials for your database:
+- PostgreSQL Credentials for your database:
   * POSTGRES_USER
   * POSTGRES_PASSWORD
   * POSTGRES_DB
